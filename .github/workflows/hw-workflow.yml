@@ -1,0 +1,23 @@
+name: CI ${{ github.actor }} ${{ github.ref_name }}
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+env:
+  GITHUB_ACTIONS: 'some value'
+
+jobs:
+  github-task-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      - run: echo ${{ env.GITHUB_ACTIONS}}
+      - run: echo branch name ${{ github.ref }} and repo is ${{ github.repository }}
+      - run: trigered by ${{ github.event_name }} event
+
