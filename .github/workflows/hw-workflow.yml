@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  GITHUB_ACTIONS: 'some value'
+  GITHUB_ACTIONS: some value
 
 jobs:
   github-task-job:
