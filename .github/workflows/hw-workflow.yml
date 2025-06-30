@@ -4,11 +4,9 @@ run-name: ${{ github.actor }} is testing out GitHub Actions
 on:
   pull_request:
     branches: [ "main" ]
-
-  workflow_dispatch:
-
+    
 env:
-  GITHUB_ACTIONS: some value
+  GITHUB_ACTIONS: test
 
 jobs:
   github-task-job:
