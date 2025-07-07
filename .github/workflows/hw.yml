@@ -24,7 +24,7 @@ jobs:
         run: echo "branch name ${{ github.ref }} and repo is ${{ github.repository }}"
         
       - name: Show trigger info
-        run: "trigered by ${{ github.event_name }} event"
+        run: echo "trigered by ${{ github.event_name }} event"
 
       - name: Show env variable
         run: echo "${{ env.GITHUB_ACTIONS}}"
