@@ -13,7 +13,7 @@ env:
   GITHUB_ACTIONS: test
 
 jobs:
-  github-task-job:
+  githubci:
     runs-on: ubuntu-latest
 
     steps:
