@@ -1,11 +1,9 @@
-name: CI
-run-name: is testing out GitHub Actions
+name: CITest
+run-name: ${{ github.actor }} is testing out GitHub Actions
 
 on:
   pull_request:
     branches: [ "main" ]
-
-  workflow_dispatch:
 
 env:
   GITHUB_ACTIONS: test
