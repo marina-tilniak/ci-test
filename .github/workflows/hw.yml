@@ -19,14 +19,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-      
-      - name: Show env variable
-        run: echo "${{ env.GITHUB_ACTIONS}}"
         
       - name: Show repo info
         run: echo "branch name ${{ github.ref }} and repo is ${{ github.repository }}"
         
       - name: Show trigger info
         run: "trigered by ${{ github.event_name }} event"
+
+      - name: Show env variable
+        run: echo "${{ env.GITHUB_ACTIONS}}"
       
 
